@@ -64,6 +64,7 @@ public class StorageController {
     @GetMapping("/list")
     public ResponseEntity<List<String>> listFiles() {
         List<String> fileNames;
+
         try (Stream<Path> pathStream = Files.list(StorageLocation)) {
             fileNames = pathStream.map(Path::getFileName).map(Path::toString).toList();
 
