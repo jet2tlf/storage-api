@@ -7,7 +7,7 @@
 
 - Build the Project
 ```
-gradlew.bat build
+gradlew build
 ```
 - Execute
 ```
